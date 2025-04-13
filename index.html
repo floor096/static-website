@@ -1,58 +1,105 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Jowe Boy&apos;s Website</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-	</head>
 
-	<body>
-		<header>
-			<div class="row">
-				<div class="logo">
-					<img src="assets/logo-new.png" alt="oe_logo">
-				</div>
-				<ul class="main-nav">
-					<li class="active"><a href="">HOME</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">BLOG</a></li>
-					<li><a href="">CONTACT</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<div class="logo">
+				<img src="assets/logo-new.png" alt="oe_logo">
 			</div>
-			<div class="hero">
-				<h1>Ready for Action?</h1>
-				<div class="button">
-					<a href="" class="btn btn-one">Watch Video</a>
-					<a href="" class="btn btn-two">Explore More</a>
-				</div>
+			<ul class="main-nav">
+				<li class="active"><a href="#home">HOME</a></li>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#blog">BLOG</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		</div>
+		<div class="hero">
+			<h1>Ready for Action?</h1>
+			<div class="button">
+				<a href="#" class="btn btn-one">Watch Video</a>
+				<a href="#" class="btn btn-two">Explore More</a>
 			</div>
-		</header>
-		<section class="service grid-container">
-		</section>
-		<section class="about grid-container">
-		</section>
-		<section class="blog grid-container">
-		</section>
-		<section class="contact grid-container">
-			<div class="contact-form grid-item">
-				<div class="contact-section-header">
-					<h2>Get in touch with us!</h2>
-				</div>
-				<form class="form">
-					<input type="text" name="fullname" placeholder="Fullname">
-					<input type="email" name="email" placeholder="Email Address">
-					<input type="number" name="phonenumber" placeholder="Phone Number">
-					<textarea class="subject" name="subject" placeholder="Your subject here..."></textarea>
-					<input class="button" type="submit" value="Submit">
-				</form>
+		</div>
+	</header>
+
+	<section id="services" class="service grid-container">
+		<div class="grid-item">
+			<h2>Our Services</h2>
+			<p>Here you can put information about your services.</p>
+		</div>
+		<div class="grid-item">
+			<h2>What We Offer</h2>
+			<p>More details about your offerings.</p>
+		</div>
+	</section>
+
+	<section id="about" class="about grid-container">
+		<div class="grid-item">
+			<h2>About Us</h2>
+			<p>Information about your company or yourself.</p>
+		</div>
+		<div class="grid-item">
+			<h2>Our Mission</h2>
+			<p>Your mission statement and values.</p>
+		</div>
+	</section>
+
+	<section id="blog" class="blog grid-container">
+		<div class="grid-item">
+			<h2>Latest Blog Posts</h2>
+			<p>Preview of your recent blog posts.</p>
+		</div>
+		<div class="grid-item">
+			<h2>Featured Article</h2>
+			<p>Highlight an important blog article here.</p>
+		</div>
+	</section>
+
+	<section id="contact" class="contact grid-container">
+		<div class="contact-form grid-item">
+			<div class="contact-section-header">
+				<h2>Get in touch with us!</h2>
 			</div>
-			<div class="contact-form grid-item">
+			<form class="form">
+				<input type="text" name="fullname" placeholder="Full Name" required>
+				<input type="email" name="email" placeholder="Email Address" required>
+				<input type="tel" name="phonenumber" placeholder="Phone Number">
+				<textarea class="subject" name="subject" placeholder="Your message here..."></textarea>
+				<input class="button" type="submit" value="Send Message">
+			</form>
+		</div>
+		<div class="contact-form grid-item">
+			<div class="contact-section-header">
+				<h2>Contact Information</h2>
 			</div>
-		</section>
-		<section class="faq grid-container">
-		</section>
-	</body>
+			<p>Email: info@example.com</p>
+			<p>Phone: +1 234 567 890</p>
+			<p>Address: 123 Street Name, City, Country</p>
+		</div>
+	</section>
+
+	<section id="faq" class="faq grid-container">
+		<div class="grid-item">
+			<h2>Frequently Asked Questions</h2>
+			<p>Common questions and answers about your services.</p>
+		</div>
+		<div class="grid-item">
+			<h2>Need Help?</h2>
+			<p>Additional resources or help information.</p>
+		</div>
+	</section>
+</body>
 
 </html>
